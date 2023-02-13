@@ -47,9 +47,7 @@
                             <td  class="d-none d-md-block">{{$train->carriages_number}}</td>
                             <td>
                                 @if ($train->is_on_time == false)
-                                    @php
-                                        echo rand(10,50) . ' min';
-                                    @endphp 
+                                    {{rand(10,50) . ' min';}}
                                 @endif
                             </td>
                             <td class="fw-bold">
